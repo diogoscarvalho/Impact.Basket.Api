@@ -20,7 +20,7 @@ namespace Impact.Basket.Api.Domain.Models
         /// </summary>
         public ConcurrentDictionary<int, BasketItem> Items { get; }
 
-        public BasketStatus BasketStatus => _status;
+        public BasketStatus Status => _status;
 
         /// <summary>
         /// Initializes a new instance of the `Basket` class with a new unique identifier
@@ -53,7 +53,7 @@ namespace Impact.Basket.Api.Domain.Models
         /// <param name="item">The `BasketItem` to add to the basket.</param>
         public void AddItem(BasketItem item)
         {
-            if (!BasketStatus.Equals(BasketStatus.Open))
+            if (!Status.Equals(BasketStatus.Open))
                 throw new InvalidOperationException($"Products cannot be added to a non-opened basket");
 
             if (Items.TryGetValue(item.Product.Id, out BasketItem existingItem))
@@ -73,7 +73,7 @@ namespace Impact.Basket.Api.Domain.Models
         /// <param name="item">The `BasketItem` to remove from the basket.</param>
         public void RemoveItem(BasketItem item)
         {
-            if (!BasketStatus.Equals(BasketStatus.Open))
+            if (!Status.Equals(BasketStatus.Open))
                 throw new InvalidOperationException($"Products cannot be removed from a non-opened basket");
             else
             {
