@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Impact.Basket.Api.Domain\Impact.Basket.Api.Domain.csproj" />
     <ProjectReference Include="..\Impact.Basket.Api.Repository\Impact.Basket.Api.Repository.csproj" />
   </ItemGroup>
