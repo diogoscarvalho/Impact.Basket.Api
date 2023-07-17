@@ -51,7 +51,7 @@ namespace Impact.Basket.Api.Repository
 
             _logger.LogDebug("Retrieving paged products with page number {pageNumber} and page size of {pageSize}", paginationFilter.PageNumber, paginationFilter.PageSize);
 
-            return Task.FromResult(Result.Success(this.Products.Values.Skip((paginationFilter.PageSize - 1 * paginationFilter.PageNumber)).Take(paginationFilter.PageSize).ToDomain()));
+            return Task.FromResult(Result.Success(this.Products.Values.Skip((paginationFilter.PageNumber - 1 * paginationFilter.PageSize)).Take(paginationFilter.PageSize).ToDomain()));
         }
 
         public Task<Result<Product>> GetById(int id)
