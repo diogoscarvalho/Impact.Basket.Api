@@ -75,7 +75,7 @@ namespace Impact.Basket.Api.Controllers
             var result = await _basketService.Create(basketRequest.ToDomain());
 
             return result.IsSuccess
-                ? Ok(result)
+                ? Ok(result.Value)
                 : BadRequest(result.Error);
         }
 
@@ -100,7 +100,7 @@ namespace Impact.Basket.Api.Controllers
             var result = await _basketService.Update(existingBasket);
 
             return result.IsSuccess
-                ? Ok(result)
+                ? Ok()
                 : BadRequest(result.Error);
         }
 
@@ -115,7 +115,7 @@ namespace Impact.Basket.Api.Controllers
             var result = await _basketService.Delete(id);
 
             return result.IsSuccess
-                ? Ok(result)
+                ? Ok()
                 : NotFound(result.Error);
         }
 
@@ -126,7 +126,7 @@ namespace Impact.Basket.Api.Controllers
             var result = await _basketService.PlaceAnOrder(basketId);
 
             return result.IsSuccess
-                ? Ok(result) : NotFound(result);
+                ? Ok() : NotFound(result.Error);
         }
     }
 }
