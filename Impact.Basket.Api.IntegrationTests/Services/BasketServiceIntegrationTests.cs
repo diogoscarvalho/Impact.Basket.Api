@@ -40,7 +40,7 @@ namespace Impact.Basket.Api.IntegrationTests.Services
         {
             // Arrange
             var basket = new Api.Domain.Models.Basket();
-            var basketId = Guid.NewGuid();
+            var basketId = basket.Id;
 
             // Act
             var result = await _basketService.Create(basket);
