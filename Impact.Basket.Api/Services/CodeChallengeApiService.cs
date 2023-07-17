@@ -15,7 +15,7 @@ namespace Impact.Basket.Api.Services
         private ILogger<CodeChallengeApiService> _logger;
         private IHttpClientFactory _httpClientFactory;
         private const string _baseUri = "https://azfun-impact-code-challenge-api.azurewebsites.net/api/";
-        private readonly string clientKey = "myEmail@domain.com";
+        private readonly string clientKey = "diogo.carvalho@email.com";
         private string _accessToken;
 
         /// <summary>
