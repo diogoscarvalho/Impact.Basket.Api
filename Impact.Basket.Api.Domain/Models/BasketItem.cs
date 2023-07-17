@@ -66,3 +66,4 @@
             _totalPrice = Product.Price * _quantity;
         }
     }
+}
