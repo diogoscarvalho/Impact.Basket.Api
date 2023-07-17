@@ -58,3 +58,4 @@ namespace Impact.Basket.Api.Domain.Services.Contracts
         /// <returns>A <see cref="Task"/> representing the asynchronous operation. The task result contains a <see cref="Result{T}"/> with the collection of products if successful, or an error message if an error occurs.</returns>
         Task<Result<IEnumerable<Product>>> GetCheapest(int numberOfProducts);
     }
+}
