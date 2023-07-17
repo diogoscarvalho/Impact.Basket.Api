@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Impact.Basket.Api", "Impact.Basket.Api\Impact.Basket.Api.csproj", "{04C6386B-2BB2-4B2D-BCB1-F64BDA634EDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impact.Basket.Api.Domain", "Impact.Basket.Api.Domain\Impact.Basket.Api.Domain.csproj", "{A239D8D2-82D3-4FFA-A637-E80F1C04D739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Impact.Basket.Api.Domain", "Impact.Basket.Api.Domain\Impact.Basket.Api.Domain.csproj", "{A239D8D2-82D3-4FFA-A637-E80F1C04D739}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{19C6E3EF-04A2-4F01-9960-1FC066AAE35E}"
 EndProject
@@ -13,11 +13,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{49E4FF27-8ED0-4231-930D-4E63E5703C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impact.Basket.Api.UnitTests", "Impact.Basket.Api.UnitTests\Impact.Basket.Api.UnitTests.csproj", "{1ED47F92-9C84-4B41-83DB-B9A3D47203FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Impact.Basket.Api.UnitTests", "Impact.Basket.Api.UnitTests\Impact.Basket.Api.UnitTests.csproj", "{1ED47F92-9C84-4B41-83DB-B9A3D47203FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impact.Basket.Api.IntegrationTests", "Impact.Basket.Api.IntegrationTests\Impact.Basket.Api.IntegrationTests.csproj", "{C36C56D6-4898-456E-BCAF-6122D3287A73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Impact.Basket.Api.IntegrationTests", "Impact.Basket.Api.IntegrationTests\Impact.Basket.Api.IntegrationTests.csproj", "{C36C56D6-4898-456E-BCAF-6122D3287A73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impact.Basket.Api.Repository", "Impact.Basket.Api.Repository\Impact.Basket.Api.Repository.csproj", "{09FE4BE0-EE02-4E04-9C1E-7D714CCD721F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Impact.Basket.Api.Repository", "Impact.Basket.Api.Repository\Impact.Basket.Api.Repository.csproj", "{09FE4BE0-EE02-4E04-9C1E-7D714CCD721F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86FD5855-075B-4139-9BD2-0008B3CEC462}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
