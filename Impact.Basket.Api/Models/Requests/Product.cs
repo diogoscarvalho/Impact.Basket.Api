@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace Impact.Basket.Api.Models.Requests
+﻿namespace Impact.Basket.Api.Models.Requests
 {
     /// <summary>
     /// The `Product` class represents a product with its associated information.

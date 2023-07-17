@@ -1,7 +1,10 @@
 ﻿using Impact.Basket.Api.Domain.Models;
 using Impact.Basket.Api.Domain.Repositories.Contracts;
 using Impact.Basket.Api.Domain.Services.Contracts;
+using Impact.Basket.Api.Models.Requests;
+using Impact.Basket.Api.Models.Responses;
 using Impact.Basket.Api.Repository;
+using Impact.Basket.Api.Services;
 
 namespace Impact.Basket.Api.Configuration
 {
@@ -29,7 +32,7 @@ namespace Impact.Basket.Api.Configuration
                 return new UriService(absoluteUri);
             });
 
-            services.AddSingleton<ICodeChallengeApiService, CodeChallengeApiService>();
+            services.AddSingleton<ICodeChallengeApiService<OrderRequest,OrderResponse>, CodeChallengeApiService>();
 
             return services;
         }
@@ -41,7 +44,7 @@ namespace Impact.Basket.Api.Configuration
         /// <returns>The updated service collection.</returns>
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
-            services.AddSingleton<IGenericRepository<Product, int>, InMemoryProductRepository>();
+            services.AddSingleton<IGenericRepository<Domain.Models.Product, int>, InMemoryProductRepository>();
             services.AddSingleton<IGenericRepository<Domain.Models.Basket, Guid>, InMemoryBasketRepository>();
 
             return services;

@@ -1,6 +1,4 @@
-﻿using Impact.Basket.Api.Domain.Models;
-
-namespace Impact.Basket.Api.Models.Requests
+﻿namespace Impact.Basket.Api.Models.Requests
 {
     /// <summary>
     /// The BasketRequest class represents a request to create a basket.

@@ -250,7 +250,7 @@ namespace Impact.Basket.Api.UnitTests.Repositories
             await _repository.Create(basket2);
             await _repository.Create(basket3);
 
-            Func<Api.Domain.Models.Basket, bool> predicate = basket => basket.BasketStatus.Equals(BasketStatus.Open);
+            Func<Api.Domain.Models.Basket, bool> predicate = basket => basket.Status.Equals(BasketStatus.Open);
 
             // Act
             var result = await _repository.GetByFilter(predicate);
