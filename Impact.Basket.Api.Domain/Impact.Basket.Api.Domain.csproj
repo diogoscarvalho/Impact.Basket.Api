@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.40.0" />
   </ItemGroup>
 
 </Project>
